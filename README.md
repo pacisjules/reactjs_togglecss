@@ -1,6 +1,89 @@
+## How this project work
+### This is the dark mode before click the toggle css button
+
+![darkMode](https://user-images.githubusercontent.com/51479761/177051259-b9091d12-8bc6-40de-8217-274de9657569.PNG)
+
+### This is the light mode after click the toggle css button
+![darkMode](https://user-images.githubusercontent.com/51479761/177051259-b9091d12-8bc6-40de-8217-274de9657569.PNG)
+
+# Coding
+### This codes can run over Javascript and here.
+
+``` javascript
+
+import React from "react";
+import "./App.css";
+import smile from './assets/imgs/smile.jpg';
+
+
+export default class App extends React.Component {
+  state = {
+    bgcolor: "#696969",
+    switchs: true,
+    anime:"",
+    ctcolor: "#cbd4d9",
+    ctborderrd:"20px",
+    message:"OFF",
+    photoimg: "grayscale(0%)",
+  };
+
+
+  render() {
+    return (
+      <div className="App" style={{
+        backgroundColor: this.state.bgcolor,
+        animationName: this.state.anime,
+        animationDuration: "5s"
+      }}>
+        <div className="container" style={{
+            backgroundColor:this.state.ctcolor,
+            borderRadius:this.state.ctborderrd
+        }}>
+          
+          <img src={smile} alt="" style={{
+            filter:this.state.photoimg
+          }}/>
+
+          <button onClick={() => {
+            if (this.state.switchs) {
+              this.setState({
+                bgcolor: "white",
+                switchs: false,
+                anime: "showThis",
+                ctcolor: "#001b2b",
+                ctborderrd:"50px",
+                message:"ON",
+                photoimg: "grayscale(100%)"
+              });
+            }
+            else {
+              this.setState({
+                bgcolor: "#696969",
+                switchs: true,
+                anime: "showThis",
+                ctcolor: "#cbd4d9",
+                ctborderrd:"20px",
+                message:"OFF",
+                photoimg: "grayscale(0%)"
+              });
+            }
+          }}>TOGGLE CSS</button>
+          <p style={{
+            color:this.state.bgcolor
+          }}>{this.state.message}</p>
+        </div>
+      </div>
+    );
+  }
+}
+
+
+```
+
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with it's name [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
