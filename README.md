@@ -4,7 +4,8 @@
 ![darkMode](https://user-images.githubusercontent.com/51479761/177051259-b9091d12-8bc6-40de-8217-274de9657569.PNG)
 
 ### This is the light mode after click the toggle css button
-![darkMode](https://user-images.githubusercontent.com/51479761/177051259-b9091d12-8bc6-40de-8217-274de9657569.PNG)
+![LightMode](https://user-images.githubusercontent.com/51479761/177051628-9e99885f-7224-4e83-a4b9-2fc9ef895391.PNG)
+
 
 # Coding
 ### This codes can run over Javascript and here.
