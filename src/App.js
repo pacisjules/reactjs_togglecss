@@ -1,17 +1,20 @@
-import React from 'react';
-import './App.css';
-import smile from './assets/imgs/smile.jpg';
+import React from "react";
+import "./App.css";
 
-export default class App extends React.Component() {
+
+
+export default class App extends React.Component {
+  state = {
+    title: "",
+    MessageBox: "Oops! You're offline. Please check your network connection...",
+    show: false,
+  };
+
+  
   render() {
     return (
-      <div className="App">
-        <div className="container">
-          <img src={smile} alt='' />
-          <button>TOGGLE CSS</button>
-        </div>
+      <div>
       </div>
     );
   }
 }
-

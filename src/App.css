@@ -16,7 +16,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color:white;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   animation-name: showThis;
   animation-duration: 3s;
@@ -40,6 +39,13 @@
   font-size: 15px;
   border-radius: 50px;
   margin-top: 50px;
+  transition: all ease-in-out 0.3s;
+  
+}
+
+.App .container button:hover{
+  background-color: #0d62d1;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .App .container img{
@@ -47,6 +53,6 @@
   height: 200px;
   object-fit:cover;
   border-radius: 50%;
-  border: 5px #039dfc solid;
+  border: 2px #039dfc solid;
 }
 
